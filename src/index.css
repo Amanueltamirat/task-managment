@@ -5,9 +5,130 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background:linear-gradient(to right, red , yellow); */
+  background-color: #f4f0f1;
+  background-color: rgb(35, 7, 59);
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.app{
+display: flex;
+margin: 5% 30% 2rem 2rem;
+gap: 20%;
+
+}
+.app header{
+  display: flex;
+  flex-direction: column;
+  /* background-color: lightgray; */
+  padding: 10px;
+  box-shadow: 3px 0 0px 0  rgba(16, 13, 13, 0.1);
+ gap: 10px;
+}
+.tasks, .tasklist{
+  margin-top: 5%;
+width: 60%;
+height: 100vh;
+}
+.tasks form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+.tasks form label, .tasklist{
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.tasks form label input{
+  padding: 5px 10px;
+  width: 50%;
+}
+.tasks form button{
+font-size: 16px;
+  padding: 5px;
+  width: 150px;
+   position: absolute;
+   bottom: -40%;
+   left: 30%;
+   background-color: rgb(15, 70, 15);
+   border: none;
+   padding: 10px;
+   border-radius: 5px;
+   color: white; 
+   margin: 10px;
+}
+.tasks form button:hover{
+  background-color:rgb(33, 70, 33);
+}
+.tasklist {
+  gap: 2rem;
+  cursor: pointer;
+}
+.tasklist div {
+  min-width: 250px;
+}
+.tasklist div p, .tasklist div h2{
+  margin: 0;
+}
+.hidden{
+  display: none;
+
+}
+.app header .link{
+  text-decoration: none;
+  font-size: 18px;
+}
+.link:hover {
+   color: rgb(68, 64, 64);
+}
+.isActiveLink:hover {
+ color: rgb(167, 156, 156);
+}
+.isNotActiveLink{
+color: rgb(167, 156, 156);
+ font-size: 18px;
+   font-weight: 500;
+}
+.isActiveLink{
+   text-decoration: none;
+  font-weight: 500;
+   color: rgb(68, 64, 64);
+   font-size: 18px;
+}
+.visible {
+  display: flex;
+  gap: 10px;
+}
+.visible button{
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: white; 
+}
+.visible button:first-child {
+  background-color: rgb(199, 44, 44);
+  padding: 10px;
+}
+.see-analysis{
+  background-color: blue;
+}
+.see-analysis:hover{
+  background-color: rgb(65, 65, 234);
+}
+.visible button:first-child:hover{
+  background-color: rgb(118, 23, 23);
+}
+.visible button:last-child{
+  background-color: rgb(49, 103, 49);
+  padding: 10px;
+}
+.visible button:last-child:hover{
+   background-color: rgb(26, 65, 26);
 }
